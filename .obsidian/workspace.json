@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "dd3a9a48eb04293c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d6eac472f906915",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62491320647beca7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recepção/Paciente.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Paciente"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "506b69ac8e6f22fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c459b9ea666f4cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a996b19c74967a2c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "b5f1f9baade559f0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "d06c662308ecb97b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "05adc2e12b04c709",
+    "type": "split",
+    "children": [
+      {
+        "id": "037d9646e72a0a67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "230dc365e5377d97",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos"
+            }
+          },
+          {
+            "id": "428d43106256ed7a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "672fd85575b9a216",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "f0792f4fa7deda64",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "e3b5797e3f473727",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "62491320647beca7",
+  "lastOpenFiles": [
+    "Recepção/Menu principal.md",
+    "Recepção/Médico.md",
+    "Recepção/Leitos.md",
+    "Recepção/Paciente.md",
+    "Recepção/Diagnóstico.md",
+    "Financeiro/📋 Lista para Conferência (Altas - Financeiro).md",
+    "Financeiro/👨‍⚕️ Médico (Situação - Consulta - Financeiro).md",
+    "Financeiro/🏥 Convênio (Situação - Consulta - Financeiro).md",
+    "Recepção/DER.md",
+    "Recepção/Tela Inicial.md",
+    "Recepção/Cadastros.md",
+    "Recepção/Cidade.md",
+    "Recepção/Classificação.md",
+    "Sem título.base",
+    "Recepção/Especialidade.md",
+    "Recepção/Setor.md",
+    "Financeiro/📋 Situação - Opções (Consulta - Financeiro).md",
+    "Recepção",
+    "Financeiro/🔍 Consulta (Financeiro).md",
+    "Financeiro/📦 Estoque (Consulta - Financeiro).md",
+    "Financeiro/🔍 Consulta.md",
+    "Financeiro/👤 Paciente (Consulta - Financeiro).md",
+    "Financeiro/🔍 Consulta (Conta - Financeiro).md",
+    "Financeiro/🏦 Conta.md",
+    "Financeiro/🔍 Consulta (Altas - Consulta - Financeiro).md",
+    "Bem-vindo.md",
+    "Financeiro/🩺 Especialidade (Situação - Consulta - Financeiro).md",
+    "Financeiro/🛏️ Leitos (Consulta - Financeiro).md",
+    "Financeiro"
+  ]
+}

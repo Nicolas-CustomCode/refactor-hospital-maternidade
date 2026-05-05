@@ -1,0 +1,8 @@
+[[Setor]]
+[[Leitos]]
+[[Médico]]
+[[Classificação]]
+[[Diagnóstico]]
+[[Especialidade]]
+[[Cidade]]
+[[Menu principal]]
