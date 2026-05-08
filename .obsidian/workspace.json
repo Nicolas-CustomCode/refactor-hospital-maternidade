@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8d6eac472f906915",
+        "id": "a2face91fd97e292",
         "type": "tabs",
         "children": [
           {
-            "id": "62491320647beca7",
+            "id": "a13ca2b0a7f1d3c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recepção/Paciente.md",
+                "file": "Requisitos e Regras de Negócio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Paciente"
+              "title": "Requisitos e Regras de Negócio"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Requisitos e Regras de Negócio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos"
+              "title": "Links inversos para Requisitos e Regras de Negócio"
             }
           },
           {
@@ -180,24 +181,25 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "62491320647beca7",
+  "active": "a996b19c74967a2c",
   "lastOpenFiles": [
-    "Recepção/Menu principal.md",
-    "Recepção/Médico.md",
+    "Requisitos e Regras de Negócio.md",
+    "Recepção/DER.md",
     "Recepção/Leitos.md",
+    "Recepção/Setor.md",
     "Recepção/Paciente.md",
     "Recepção/Diagnóstico.md",
+    "Recepção/Especialidade.md",
+    "Recepção/Menu principal.md",
+    "Recepção/Médico.md",
     "Financeiro/📋 Lista para Conferência (Altas - Financeiro).md",
     "Financeiro/👨‍⚕️ Médico (Situação - Consulta - Financeiro).md",
     "Financeiro/🏥 Convênio (Situação - Consulta - Financeiro).md",
-    "Recepção/DER.md",
     "Recepção/Tela Inicial.md",
     "Recepção/Cadastros.md",
     "Recepção/Cidade.md",
     "Recepção/Classificação.md",
     "Sem título.base",
-    "Recepção/Especialidade.md",
-    "Recepção/Setor.md",
     "Financeiro/📋 Situação - Opções (Consulta - Financeiro).md",
     "Recepção",
     "Financeiro/🔍 Consulta (Financeiro).md",
@@ -209,7 +211,6 @@
     "Financeiro/🔍 Consulta (Altas - Consulta - Financeiro).md",
     "Bem-vindo.md",
     "Financeiro/🩺 Especialidade (Situação - Consulta - Financeiro).md",
-    "Financeiro/🛏️ Leitos (Consulta - Financeiro).md",
     "Financeiro"
   ]
 }

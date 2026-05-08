@@ -54,30 +54,95 @@ Se informar o código de um setor não cadastrado, mantém o campo em branco e e
 #### Número
 - Número
 #### RG
+- Número
 #### UF
+- Texto
 #### De
+- Data
 #### Naturalidade
+- Texto
 #### CPF
+- Número
 #### IBGE
+- Número
 #### Responsável
+- Texto
 #### Endereço
+- Texto
 #### Cidade
+- Número
 #### UF
-#### F. Res
+- Texto
+#### Fone residencial
+- Número
 #### Complemento
+- Texto
 #### Documento
+- Número
 #### Número
+- Número
 #### Sispre
+- Número
 #### Último Internamento
+- Data
 ##### Óbito
-
+- Data
 ---
 
 ## Entidade:
 ```mermaid
 erDiagram
-LEITO {
-	int registro PK
+PESSOA {
+    int registro PK
+    int func
+    string nome "UNIQUE"
+    
+    string endereco
+    int cidade
+    string uf
+    int cep
+    
+    date nascimento
+    
+    int fone_residencial
+    int celular
+    
+    int sexo
+    int estado_civil
+    int cor
+    int religiao
+    
+    string profissao
+    
+    string pai
+    string mae
+    
+    int convenio
+    
+    int documento
+    int numero
+    
+    int rg
+    string uf_rg
+    date de
+    
+    string naturalidade
+    int cpf
+    int ibge
+    
+    string responsavel
+    string endereco_responsavel
+    int cidade_responsavel
+    string uf_responsavel
+    int fone_residencial_responsavel
+    string complemento_responsavel
+    int documento_responsavel
+    int numero_responsavel
+    
+    int sispre
+    
+    date ultimo_internamento
+    date obito
 }
 ```
 

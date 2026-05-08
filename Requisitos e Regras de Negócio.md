@@ -1,0 +1,21 @@
+## Requisitos Funcionais
+
+- RF01 - O sistema deve permitir cadastrar, consultar e excluir pacientes
+- RF02 - O sistema deve permitir atualizar dados cadastrais de pacientes
+- RF03 - O sistema deve permitir pesquisar pacientes por nome, CPF, CNS ou registro
+- RF04 - O sistema deve permitir cadastro de acompanhantes e responsáveis
+- RF05 - O sistema deve validar CPF e CNS
+- RF06 - O sistema deve permitir emissão de ficha de atendimento
+- RF07 - O sistema deve permitir impressão de etiquetas
+- RF08 - O sistema deve permitir registrar e alterar internações
+- RF09 - O sistema deve permitir transferir internações
+- RF10 - O sistema deve permitir exibir a quantidade de internações
+- RF11 - O sistema deve permitir acompanhar estado geral do paciente
+- RF12 - O sistema deve permitir imprimir boletins
+- RF13 - O sistema deve permitir imprimir etiquetas
+- RF14 - O sistema deve permitir consultar e registrar altas
+- RF15 - O sistema deve permitir cadastrar, consultar e alterar especialidades
+- RF16 - O sistema deve permitir cadastrar, consultar, alterar e excluir diagnósticos
+- RF17 - O sistema deve usar fontes externas para buscar por cidades
+- RF18 - O sistema deve permitir cadastrar, consultar, alterar e excluir leitos
+- RF19 - 
