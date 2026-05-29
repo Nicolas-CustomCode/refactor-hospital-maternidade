@@ -63,32 +63,12 @@
 
 ### 💊 Clínica
 
-- RF32 - O sistema deve permitir registrar consultas clínicas
-- RF33 - O sistema deve permitir consultar histórico de consultas clínicas
+- RF32 - O sistema deve permitir registrar tipos de atendimentos clínicos
+- RF33 - O sistema deve permitir consultar tipos de atendimentos clínicos registrados
+- RF34 - O sistema deve permitir editar tipos de atendimentos clínicos registrados
+- RF35 - O sistema deve permitir excluir tipos de atendimentos clínicos que não tenham nenhum vínculo
 
 ---
-
-### 💰 Financeiro
-
-- RF34 - O sistema deve permitir registrar faturas
-- RF35 - O sistema deve permitir consultar histórico de faturas
-- RF36 - O sistema deve permitir registrar contas de consultas
-- RF37 - O sistema deve permitir consultar histórico de contas de consultas
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Regras de Negócio
 
@@ -97,44 +77,3 @@
 - RN03 – O CPF do paciente deve ser único
 - RN04 – Um leito bloqueado não pode receber internações
 - RN05 – A transferência deve liberar automaticamente o leito anterior
-
-
-
-
-
-
-
-### 💰 Financeiro
-
-- RF25 - O sistema deve permitir registrar despesas hospitalares
-- RF26 - O sistema deve permitir registrar cobranças de internação
-- RF27 - O sistema deve gerar relatórios financeiros
-- RF28 - O sistema deve permitir consultar faturamentos por período
-
----
-
-### 📦 Estoque / Materiais
-
-- RF29 - O sistema deve permitir cadastrar itens de estoque
-- RF30 - O sistema deve registrar entradas de materiais
-- RF31 - O sistema deve registrar saídas de materiais
-- RF32 - O sistema deve informar quantidade disponível em estoque
-- RF33 - O sistema deve alertar sobre estoque mínimo
-
----
-
-### 📊 Relatórios e Estatísticas
-
-- RF34 - O sistema deve gerar relatório de internações
-- RF35 - O sistema deve gerar relatório de ocupação de leitos
-- RF36 - O sistema deve gerar relatório de altas hospitalares
-- RF37 - O sistema deve permitir consultar estatísticas hospitalares
-
----
-
-### 🔐 Usuários e Acesso
-
-- RF38 - O sistema deve permitir autenticação de usuários
-- RF39 - O sistema deve permitir cadastrar usuários do sistema
-- RF40 - O sistema deve permitir definir permissões de acesso
-- RF41 - O sistema deve registrar logs de operações realizadas

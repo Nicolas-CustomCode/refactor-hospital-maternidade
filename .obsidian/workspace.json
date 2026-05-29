@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a2face91fd97e292",
+        "id": "ef1efdb9faa2481e",
         "type": "tabs",
         "children": [
           {
-            "id": "a13ca2b0a7f1d3c6",
+            "id": "28a41a05ddf1897a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Entidades.md",
+                "file": "Módulos/Recepção/Entidades/Paciente.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Entidades"
+              "title": "Paciente"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 302.5
   },
   "right": {
     "id": "05adc2e12b04c709",
@@ -181,11 +181,26 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "a13ca2b0a7f1d3c6",
+  "active": "28a41a05ddf1897a",
   "lastOpenFiles": [
+    "Módulos/Recepção/Entidades/Internação.md",
+    "Módulos/Recepção/Entidades/Paciente.md",
+    "Teste.md",
+    "Módulos/Recepção/Recepção.md",
+    "PI.md",
+    "Atrapalhando/Entidades (Recepção).md",
+    "Atrapalhando",
+    "Módulos/Resumo do sistema pra ver se entendo dessa vez.md",
+    "Atrapalhando/Requisitos e Regras de Negócio (Recepção).md",
+    "Atrapalhando/Requisitos e Regras de Negócio (Estoque).md",
+    "Atrapalhando/Requisitos e Regras de Negócio (Financeiro).md",
+    "Módulos/Recepção/Entidades",
+    "Módulos/Estoque",
+    "Módulos/Financeiro",
+    "Módulos/Recepção",
+    "Módulos",
+    "Convênios da Internação.md",
     "Possíveis usuários.md",
-    "Requisitos e Regras de Negócio.md",
-    "Entidades.md",
     "Recepção/Paciente.md",
     "Recepção/Cadastros.md",
     "Recepção/Cidade.md",
@@ -200,17 +215,8 @@
     "Financeiro/👨‍⚕️ Médico (Situação - Consulta - Financeiro).md",
     "Financeiro/🏥 Convênio (Situação - Consulta - Financeiro).md",
     "Recepção/Tela Inicial.md",
-    "Recepção/Classificação.md",
     "Sem título.base",
-    "Financeiro/📋 Situação - Opções (Consulta - Financeiro).md",
     "Recepção",
-    "Financeiro/🔍 Consulta (Financeiro).md",
-    "Financeiro/📦 Estoque (Consulta - Financeiro).md",
-    "Financeiro/🔍 Consulta.md",
-    "Financeiro/👤 Paciente (Consulta - Financeiro).md",
-    "Financeiro/🔍 Consulta (Conta - Financeiro).md",
-    "Financeiro/🏦 Conta.md",
-    "Financeiro/🔍 Consulta (Altas - Consulta - Financeiro).md",
     "Financeiro"
   ]
 }
