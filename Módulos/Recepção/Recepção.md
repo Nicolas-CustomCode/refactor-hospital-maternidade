@@ -36,7 +36,6 @@ O sistema deve:
 - Vincular [[Especialidade]] a [[Especialidades do Médico]]
 - Vincular [[Especialidade]] a [[Atendimento Clínico]]
 - Vincular [[Especialidade]] a [[Atendimento de Emergência]]
-- Vincular [[Especialidade]] a [[Especialidades do Médico]]
 ### Internações:
 - Cadastrar [[Internação]]
 - Consultar [[Internação]]
