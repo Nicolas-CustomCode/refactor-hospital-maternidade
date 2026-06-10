@@ -1,11 +1,13 @@
-#entidade
+#entidade 
 ## Entidade:
 ```mermaid
 erDiagram
-INTERNACAO_CONVENIO {
+CONTA {
 	uuid id PK
 	uuid internacao_id FK
-	uuid convenio_id FK
+	uuid conta_servico FK
+	uuid conta_exame FK
+	uuid conta_diaria FK
 }
 ```
 
@@ -13,4 +15,4 @@ INTERNACAO_CONVENIO {
 
 ## Entidades que se relaciona:
 - [[Internação]]
-- [[Convênio]]
+- [[Itens da Conta]]

@@ -1,4 +1,5 @@
-## Entidade
+#entidade
+## Entidade:
 ```mermaid
 erDiagram
 MEDICO_ESPECIALIDADE {
@@ -10,6 +11,6 @@ MEDICO_ESPECIALIDADE {
 
 ---
 
-## Especialidades que se relaciona
+## Entidades que se relaciona:
 - [[Médico]]
 - [[Especialidade]]

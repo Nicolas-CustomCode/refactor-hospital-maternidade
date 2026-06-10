@@ -1,17 +1,18 @@
-#entidade
+#entidade 
 ## Entidade:
 ```mermaid
 erDiagram
-PACIENTE_CONVENIO {
+EXAMES_CONVENIO {
 	uuid id PK
-	uuid paciente_id FK
+	uuid exame_id FK
 	uuid convenio_id FK
-	string carteirinha
+	decimal valor
 }
 ```
 
 ---
 
 ## Entidades que se relaciona:
-- [[Paciente]]
+- [[Exames da Conta]]
+- [[Exame]]
 - [[Convênio]]

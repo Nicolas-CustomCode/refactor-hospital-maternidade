@@ -1,4 +1,5 @@
-## Entidade
+#entidade
+## Entidade:
 ```mermaid
 erDiagram
 CONVENIO {
@@ -9,7 +10,7 @@ CONVENIO {
 
 ---
 
-## Entidades que se relaciona
+## Entidades que se relaciona:
 - [[Convênios do Paciente]]
 - [[Convênios da Internação]]
 

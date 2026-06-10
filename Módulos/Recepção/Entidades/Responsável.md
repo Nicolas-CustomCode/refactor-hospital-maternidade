@@ -1,4 +1,5 @@
-## Entidade
+#entidade
+## Entidade:
 ```mermaid
 erDiagram
 RESPONSAVEL {
@@ -17,5 +18,5 @@ RESPONSAVEL {
 
 ---
 
-## Entidades que se relaciona
+## Entidades que se relaciona:
 - [[Responsáveis do Paciente]]

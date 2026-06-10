@@ -4,24 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "126086e76ba0f52f",
+        "id": "9403bffc95267dfb",
         "type": "tabs",
         "children": [
           {
-            "id": "24660dc1ca0da58b",
+            "id": "ee3c5e1cac450d7a",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          },
+          {
+            "id": "e5bc96c4dd2448da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Módulos/Resumo do sistema pra ver se entendo dessa vez entendo e organizo direito.md",
-                "mode": "preview",
+                "file": "Módulos/Financeiro/Entidades/Exame.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resumo do sistema pra ver se entendo dessa vez entendo e organizo direito"
+              "title": "Exame"
+            }
+          },
+          {
+            "id": "d50ebb58caa13e91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Categorias de Exame.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Categorias de Exame"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -53,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#entidade",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -181,40 +206,41 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "24660dc1ca0da58b",
+  "active": "d50ebb58caa13e91",
   "lastOpenFiles": [
-    "Módulos/Recepção/Recepção.md",
-    "Módulos/Resumo do sistema pra ver se entendo dessa vez entendo e organizo direito.md",
-    "Módulos/Recepção/Entidades/Internação.md",
+    "Categorias de Exame.md",
+    "Módulos/Financeiro/Entidades/Exame.md",
+    "Módulos/Financeiro/Entidades/Itens da Conta.md",
+    "Módulos/Financeiro/Entidades/Exames por Convênio.md",
     "Módulos/Financeiro/Financeiro.md",
+    "Relacionamento.md",
+    "Sem título.md",
+    "Módulos/Financeiro/Entidades/Conta.md",
+    "Módulos/Financeiro/Entidades/Exames da Conta.md",
+    "Módulos/Recepção/Entidades/Alta.md",
+    "Módulos/Recepção/Recepção.md",
+    "Aula.md",
+    "Módulos/Recepção/Entidades/Convênio.md",
     "Módulos/Recepção/Entidades/Atendimento Clínico.md",
+    "Módulos/Recepção/Entidades/Diagnósticos da Internação.md",
+    "Módulos/Recepção/Entidades/Leito.md",
     "Módulos/Recepção/Entidades/Horário de Atendimento.md",
-    "Módulos/Recepção/Entidades/Médico.md",
-    "Módulos/Recepção/Entidades/Atendimento de Emergência.md",
-    "Módulos/Recepção/Entidades/Especialidades do Médico.md",
     "Módulos/Recepção/Entidades/Especialidade.md",
-    "Módulos/Recepção/Entidades/Paciente.md",
+    "Módulos/Recepção/Entidades/Diagnóstico.md",
+    "Módulos/Recepção/Entidades/Convênios da Internação.md",
+    "Módulos/Recepção/Entidades/Tabela CID10.md",
+    "Módulos/Recepção/Entidades/Setor.md",
     "Módulos/Recepção/Entidades/Responsável.md",
     "Módulos/Recepção/Entidades/Responsáveis do Paciente.md",
-    "Módulos/Recepção/Entidades/Convênios do Paciente.md",
-    "Módulos/Recepção/Entidades/Convênios da Internação.md",
-    "Módulos/Recepção/Entidades/Convênio.md",
-    "Teste.md",
-    "PI.md",
-    "Atrapalhando/Entidades (Recepção).md",
+    "Módulos/Recepção/Entidades/Paciente.md",
+    "Módulos/Recepção/Entidades/Movimentação de Leito.md",
+    "Módulos/Financeiro/Entidades",
     "Atrapalhando",
-    "Atrapalhando/Requisitos e Regras de Negócio (Recepção).md",
-    "Atrapalhando/Requisitos e Regras de Negócio (Estoque).md",
-    "Atrapalhando/Requisitos e Regras de Negócio (Financeiro).md",
     "Módulos/Recepção/Entidades",
     "Módulos/Estoque",
     "Módulos/Financeiro",
     "Módulos/Recepção",
     "Módulos",
-    "Possíveis usuários.md",
-    "Recepção/Paciente.md",
-    "Recepção/Cadastros.md",
-    "Recepção/Cidade.md",
     "Sem título.base",
     "Recepção",
     "Financeiro"

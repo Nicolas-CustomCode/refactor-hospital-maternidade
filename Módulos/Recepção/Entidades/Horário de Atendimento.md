@@ -1,4 +1,5 @@
-## Entidade
+#entidade
+## Entidade:
 ```mermaid
 erDiagram
 HORARIO_ATENDIMENTO {
@@ -11,5 +12,5 @@ HORARIO_ATENDIMENTO {
 
 ---
 
-## Entidades que se relaciona
+## Entidades que se relaciona:
 - [[Médico]]

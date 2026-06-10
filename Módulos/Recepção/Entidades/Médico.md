@@ -1,4 +1,5 @@
-## Entidade
+#entidade
+## Entidade:
 ```mermaid
 erDiagram
 MEDICO {
@@ -16,7 +17,7 @@ MEDICO {
 
 ---
 
-## Entidades que se relaciona
+## Entidades que se relaciona:
 - [[Especialidades do Médico]]
 - [[Atendimento Clínico]]
 - [[Atendimento de Emergência]]

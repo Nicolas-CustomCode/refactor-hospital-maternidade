@@ -1,3 +1,4 @@
+#entidade
 ## Entidade:
 ```mermaid
 erDiagram

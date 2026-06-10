@@ -1,4 +1,5 @@
-## Entidade
+#entidade
+## Entidade:
 ```mermaid
 erDiagram
 ESPECIALIDADE {
@@ -9,7 +10,7 @@ ESPECIALIDADE {
 
 ---
 
-## Entidades que se relaciona
+## Entidades que se relaciona:
 - [[Atendimento Clínico]]
 - [[Atendimento de Emergência]]
 - [[Especialidades do Médico]]

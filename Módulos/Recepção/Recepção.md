@@ -1,3 +1,4 @@
+#módulo
 ## Divisão:
 Um sistema hospitalar é dividido entre:
 - Atendimento clínico/ambulatorial

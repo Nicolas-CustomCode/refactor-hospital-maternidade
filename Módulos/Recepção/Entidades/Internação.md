@@ -1,4 +1,5 @@
-## Entidade
+#entidade
+## Entidade:
 ```mermaid
 erDiagram
 INTERNACAO {
@@ -15,7 +16,7 @@ INTERNACAO {
 
 ---
 
-## Entidades que se Relaciona
+## Entidades que se Relaciona:
 - [[Paciente]]
 - [[Responsável]]
 - [[Médico]]
