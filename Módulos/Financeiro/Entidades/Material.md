@@ -2,15 +2,14 @@
 ## Entidade:
 ```mermaid
 erDiagram
-CONTA {
+MATERIAL {
 	uuid id PK
-	uuid internacao_id FK
-	decimal total
+	string nome
+	string descricao
 }
 ```
 
 ---
 
 ## Entidades que se relaciona:
-- [[Internação]]
-- [[Item da Conta]]
+- [[Material por Convênio]]

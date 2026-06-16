@@ -2,9 +2,9 @@
 ## Entidade:
 ```mermaid
 erDiagram
-EXAMES_CONVENIO {
+DIARIA_CONVENIO {
 	uuid id PK
-	uuid exame_id FK
+	uuid diaria_id FK
 	uuid convenio_id FK
 	decimal valor
 }
@@ -13,6 +13,6 @@ EXAMES_CONVENIO {
 ---
 
 ## Entidades que se relaciona:
-- [[Exames da Conta]]
-- [[Exame]]
+- [[Diária]]
 - [[Convênio]]
+- [[Item da Conta]]

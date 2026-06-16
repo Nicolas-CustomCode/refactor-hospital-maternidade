@@ -7,15 +7,6 @@ Um sistema hospitalar é dividido entre:
 
 ---
 
-## Perfis de Usuário:
-O sistema é dividido em:
-
-| Usuário       | Responsabilidade                          |
-| ------------- | ----------------------------------------- |
-| Recepcionista | Cadastro de pacientes, internações, altas |
-
----
-
 ## Requisitos:
 O sistema deve:
 ### Pacientes:
@@ -23,20 +14,20 @@ O sistema deve:
 - Consultar dados do [[Paciente]] cadastrado
 - Alterar dados cadastrais de [[Paciente]]
 - Vincular [[Paciente]] a [[Internação]]
-- Vincular [[Paciente]] a [[Atendimento Clínico]]
-- Vincular [[Paciente]] a [[Atendimento de Emergência]]
+- Vincular [[Paciente]] a [[Atendimento]]
+- Vincular [[Paciente]] a [[Atendimento]]
 ### Médicos:
 - Cadastrar [[Médico]]
 - Consultar dados do [[Médico]] cadastrado
 - Alterar dados cadastrais de [[Médico]]
 - Vincular [[Médico]] a [[Internação]]
-- Vincular [[Médico]] a [[Atendimento Clínico]]
-- Vincular [[Médico]] a [[Atendimento de Emergência]]
+- Vincular [[Médico]] a [[Atendimento]]
+- Vincular [[Médico]] a [[Atendimento]]
 ### Especialidades:
 - Cadastrar [[Especialidade]]
-- Vincular [[Especialidade]] a [[Especialidades do Médico]]
-- Vincular [[Especialidade]] a [[Atendimento Clínico]]
-- Vincular [[Especialidade]] a [[Atendimento de Emergência]]
+- Vincular [[Especialidade]] a [[Especialidade do Médico]]
+- Vincular [[Especialidade]] a [[Atendimento]]
+- Vincular [[Especialidade]] a [[Atendimento]]
 ### Internações:
 - Cadastrar [[Internação]]
 - Consultar [[Internação]]
@@ -47,13 +38,13 @@ O sistema deve:
 ### Diagnósticos:
 - Cadastrar [[Diagnóstico]]
 - Consultar [[Diagnóstico]]
-- Consultar [[Diagnóstico]] da [[Tabela CID10]]
-- Vincular [[Diagnóstico]] a [[Diagnósticos da Internação]]
+- Consultar [[Diagnóstico]] da Tabela CID10
+- Vincular [[Diagnóstico]] a [[Diagnóstico da Internação]]
 ### Diagnósticos da Internação:
-- Cadastrar [[Diagnósticos da Internação]]
-- Consultar [[Diagnósticos da Internação]]
-- Alterar [[Diagnósticos da Internação]]
-- Vincular [[Diagnósticos da Internação]] a [[Internação]]
+- Cadastrar [[Diagnóstico da Internação]]
+- Consultar [[Diagnóstico da Internação]]
+- Alterar [[Diagnóstico da Internação]]
+- Vincular [[Diagnóstico da Internação]] a [[Internação]]
 ### Leitos:
 - Cadastrar [[Leito]]
 - Consultar situação do [[Leito]]
@@ -70,44 +61,40 @@ O sistema deve:
 ### Horários de Atendimento
 - Cadastrar [[Horário de Atendimento]]
 - Vincular [[Horário de Atendimento]] a [[Médico]]
-### Atendimento Clínico/Ambulatorial
-- Cadastrar [[Atendimento Clínico]]
-- Consultar [[Atendimento Clínico]]
-### Atendimento de Emergência/Urgência
-- Cadastrar [[Atendimento de Emergência]]
-- Consultar [[Atendimento de Emergência]]
+### Atendimento
+- Cadastrar [[Atendimento]]
+- Consultar [[Atendimento]]
 ### Convênios:
 - Cadastrar [[Convênio]]
 - Consultar [[Convênio]]
 - Vincular [[Convênio]] a [[Internação]]
-- Vincular [[Convênio]] a [[Atendimento Clínico]]
-- Vincular [[Convênio]] a [[Atendimento de Emergência]]
-- Vincular [[Convênio]] a [[Convênios do Paciente]]
+- Vincular [[Convênio]] a [[Atendimento]]
+- Vincular [[Convênio]] a [[Convênio do Paciente]]
 ### Responsável
 - Cadastrar [[Responsável]]
 - Consultar [[Responsável]]
 - Alterar dados cadastrais do [[Responsável]]
 ### Responsáveis do Paciente:
-- Cadastrar [[Responsáveis do Paciente]]
-- Consultar [[Responsáveis do Paciente]]
-- Alterar [[Responsáveis do Paciente]]
-- Vincular [[Responsáveis do Paciente]] a [[Paciente]]
+- Cadastrar [[Responsável do Paciente]]
+- Consultar [[Responsável do Paciente]]
+- Alterar [[Responsável do Paciente]]
+- Vincular [[Responsável do Paciente]] a [[Paciente]]
 ### Movimentação entre Leitos:
 - Registrar [[Movimentação de Leito]]
 - Consultar [[Movimentação de Leito]]
 ### Convênios do Paciente:
-- Cadastrar [[Convênios do Paciente]]
-- Alterar [[Convênios do Paciente]]
-- Consultar [[Convênios do Paciente]]
-- Vincular [[Convênios do Paciente]] a [[Paciente]]
+- Cadastrar [[Convênio do Paciente]]
+- Alterar [[Convênio do Paciente]]
+- Consultar [[Convênio do Paciente]]
+- Vincular [[Convênio do Paciente]] a [[Paciente]]
 ### Especialidades do Médico:
-- Cadastrar [[Especialidades do Médico]]
-- Alterar [[Especialidades do Médico]]
-- Consultar [[Especialidades do Médico]]
-- Vincular [[Especialidades do Médico]] a [[Médico]]
+- Cadastrar [[Especialidade do Médico]]
+- Alterar [[Especialidade do Médico]]
+- Consultar [[Especialidade do Médico]]
+- Vincular [[Especialidade do Médico]] a [[Médico]]
 ### Convênios da Internação:
-- Cadastrar [[Convênios da Internação]]
-- Vincular [[Convênios da Internação]] a [[Internação]]
+- Cadastrar [[Convênio da Internação]]
+- Vincular [[Convênio da Internação]] a [[Internação]]
 
 ---
 
@@ -142,17 +129,17 @@ O sistema deve:
 - [[Alta]]
 - [[Internação]]
 - [[Horário de Atendimento]]
-- [[Atendimento Clínico]]
+- [[Atendimento]]
 - [[Atendimento de Emergência]]
 - [[Convênio]]
 - [[Tabela CID10]]
 - [[Quarto]]
 - [[Movimentação de Leito]]
 - [[Responsável]]
-- [[Convênios do Paciente]]
-- [[Especialidades do Médico]]
-- [[Convênios da Internação]]
-- [[Diagnósticos da Internação]]
+- [[Convênio do Paciente]]
+- [[Especialidade do Médico]]
+- [[Convênio da Internação]]
+- [[Diagnóstico da Internação]]
 
 ---
 

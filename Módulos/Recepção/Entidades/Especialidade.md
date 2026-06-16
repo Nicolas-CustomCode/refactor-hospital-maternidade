@@ -4,6 +4,7 @@
 erDiagram
 ESPECIALIDADE {
 	uuid id PK
+	string codigo
 	string nome
 }
 ```
@@ -11,6 +12,5 @@ ESPECIALIDADE {
 ---
 
 ## Entidades que se relaciona:
-- [[Atendimento Clínico]]
-- [[Atendimento de Emergência]]
-- [[Especialidades do Médico]]
+- [[Atendimento]]
+- [[Especialidade do Médico]]

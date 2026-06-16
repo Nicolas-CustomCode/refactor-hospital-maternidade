@@ -6,6 +6,7 @@ INTERNACAO_CONVENIO {
 	uuid id PK
 	uuid internacao_id FK
 	uuid convenio_id FK
+	decimal valor
 }
 ```
 

@@ -24,5 +24,5 @@ PACIENTE {
 ---
 
 ## Entidades que se relaciona
-- [[Convênios do Paciente]]
-- [[Responsáveis do Paciente]]
+- [[Convênio do Paciente]]
+- [[Responsável do Paciente]]

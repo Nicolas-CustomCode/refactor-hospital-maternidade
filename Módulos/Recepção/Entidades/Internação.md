@@ -4,11 +4,12 @@
 erDiagram
 INTERNACAO {
 	uuid id PK
+	uuid atendimento_id FK
 	uuid paciente_id FK
 	uuid responsavel_id FK
 	uuid medico_id FK
 	uuid leito_atual_id FK
-	bigint codigo
+	string codigo UK
 	datetime data_entrada
 	datetime data_encerramento
 }

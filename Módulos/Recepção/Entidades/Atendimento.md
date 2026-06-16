@@ -2,10 +2,11 @@
 ## Entidade:
 ```mermaid
 erDiagram
-ATENDIMENTO_CLINICO {
+ATENDIMENTO {
 	uuid id PK
 	uuid paciente_id FK
 	uuid medico_id FK
+	enum tipo
 	date hora_entrada
 	date hora_saida
 }

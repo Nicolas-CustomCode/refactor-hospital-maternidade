@@ -19,4 +19,4 @@ RESPONSAVEL {
 ---
 
 ## Entidades que se relaciona:
-- [[Responsáveis do Paciente]]
+- [[Responsável do Paciente]]

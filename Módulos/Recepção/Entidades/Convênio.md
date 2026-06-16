@@ -11,7 +11,7 @@ CONVENIO {
 ---
 
 ## Entidades que se relaciona:
-- [[Convênios do Paciente]]
-- [[Convênios da Internação]]
+- [[Convênio do Paciente]]
+- [[Convênio da Internação]]
 
 // Falta coisa ainda

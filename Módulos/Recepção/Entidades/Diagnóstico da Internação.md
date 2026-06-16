@@ -1,13 +1,10 @@
-#entidade 
+#entidade
 ## Entidade:
 ```mermaid
 erDiagram
-ALTA {
+INTERNACAO_DIAGNOSTICO {
 	uuid id PK
 	uuid internacao_id FK
-	string codigo
-	datetime data_saida
+	uuid diagnostico_id FK
 }
 ```
-
-Incompleto

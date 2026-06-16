@@ -18,7 +18,7 @@ MEDICO {
 ---
 
 ## Entidades que se relaciona:
-- [[Especialidades do Médico]]
-- [[Atendimento Clínico]]
+- [[Especialidade do Médico]]
+- [[Atendimento]]
 - [[Atendimento de Emergência]]
 - [[Horário de Atendimento]]

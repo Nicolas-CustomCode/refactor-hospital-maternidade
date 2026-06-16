@@ -46,17 +46,17 @@ O sistema deve:
 - Cadastrar [[Exame]]
 - Consultar [[Exame]]
 - Alterar informações de [[Exame]]
-- Vincular [[Exame]] a [[Itens da Conta]]
+- Vincular [[Exame]] a [[Item da Conta]]
 ### Itens da Conta:
-- Cadastrar [[Itens da Conta]]
-- Consultar [[Itens da Conta]]
-- Alterar [[Itens da Conta]]
-- Vincular [[Itens da Conta]] a [[Conta]]
+- Cadastrar [[Item da Conta]]
+- Consultar [[Item da Conta]]
+- Alterar [[Item da Conta]]
+- Vincular [[Item da Conta]] a [[Conta]]
 
 ---
 
 ## Entidades:
 - [[Exame]]
-- [[Exames por Convênio]]
+- [[Exame por Convênio]]
 - [[Conta]]
-- [[Itens da Conta]]
+- [[Item da Conta]]

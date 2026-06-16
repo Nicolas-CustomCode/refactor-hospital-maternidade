@@ -17,5 +17,5 @@ EXAME {
 ---
 
 ## Entidades que se relaciona:
-- [[Exames por Convênio]]
+- [[Exame por Convênio]]
 - [[Categorias de Exame]]
