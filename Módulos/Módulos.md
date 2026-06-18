@@ -1,4 +1,4 @@
 O sistema é dividido em:
 - [[Recepção]]
 - [[Financeiro]]
-- [[Estoque]]
+- [[Módulos/Estoque/Estoque]]

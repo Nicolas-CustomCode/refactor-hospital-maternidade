@@ -10,64 +10,64 @@ Um sistema hospitalar é dividido entre:
 ## Requisitos:
 O sistema deve:
 ### Pacientes:
-- Cadastrar [[Paciente]]
-- Consultar dados do [[Paciente]] cadastrado
-- Alterar dados cadastrais de [[Paciente]]
-- Vincular [[Paciente]] a [[Internação]]
-- Vincular [[Paciente]] a [[Atendimento]]
-- Vincular [[Paciente]] a [[Atendimento]]
+- Cadastrar [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]]
+- Consultar dados do [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]] cadastrado
+- Alterar dados cadastrais de [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]]
+- Vincular [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]] a [[Internação (INTER.DAT)]]
+- Vincular [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]] a [[Atendimento]]
+- Vincular [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]] a [[Atendimento]]
 ### Médicos:
-- Cadastrar [[Médico]]
-- Consultar dados do [[Médico]] cadastrado
-- Alterar dados cadastrais de [[Médico]]
-- Vincular [[Médico]] a [[Internação]]
-- Vincular [[Médico]] a [[Atendimento]]
-- Vincular [[Médico]] a [[Atendimento]]
+- Cadastrar [[Médico (MED.DAT)]]
+- Consultar dados do [[Médico (MED.DAT)]] cadastrado
+- Alterar dados cadastrais de [[Médico (MED.DAT)]]
+- Vincular [[Médico (MED.DAT)]] a [[Internação (INTER.DAT)]]
+- Vincular [[Médico (MED.DAT)]] a [[Atendimento]]
+- Vincular [[Médico (MED.DAT)]] a [[Atendimento]]
 ### Especialidades:
-- Cadastrar [[Especialidade]]
-- Vincular [[Especialidade]] a [[Especialidade do Médico]]
-- Vincular [[Especialidade]] a [[Atendimento]]
-- Vincular [[Especialidade]] a [[Atendimento]]
+- Cadastrar [[Especialidade (CLI.DAT)]]
+- Vincular [[Especialidade (CLI.DAT)]] a [[Especialidade do Médico]]
+- Vincular [[Especialidade (CLI.DAT)]] a [[Atendimento]]
+- Vincular [[Especialidade (CLI.DAT)]] a [[Atendimento]]
 ### Internações:
-- Cadastrar [[Internação]]
-- Consultar [[Internação]]
-- Transferir [[Internação]] entre [[Leito]]
+- Cadastrar [[Internação (INTER.DAT)]]
+- Consultar [[Internação (INTER.DAT)]]
+- Transferir [[Internação (INTER.DAT)]] entre [[Leito]]
 ### Altas:
-- Cadastrar [[Alta]]
-- Consultar [[Alta]]
+- Cadastrar [[Alta (ALTA.DAT)]]
+- Consultar [[Alta (ALTA.DAT)]]
 ### Diagnósticos:
-- Cadastrar [[Diagnóstico]]
-- Consultar [[Diagnóstico]]
-- Consultar [[Diagnóstico]] da Tabela CID10
-- Vincular [[Diagnóstico]] a [[Diagnóstico da Internação]]
+- Cadastrar [[Diagnóstico (DIAG.DAT)]]
+- Consultar [[Diagnóstico (DIAG.DAT)]]
+- Consultar [[Diagnóstico (DIAG.DAT)]] da Tabela CID10
+- Vincular [[Diagnóstico (DIAG.DAT)]] a [[Diagnóstico da Internação]]
 ### Diagnósticos da Internação:
 - Cadastrar [[Diagnóstico da Internação]]
 - Consultar [[Diagnóstico da Internação]]
 - Alterar [[Diagnóstico da Internação]]
-- Vincular [[Diagnóstico da Internação]] a [[Internação]]
+- Vincular [[Diagnóstico da Internação]] a [[Internação (INTER.DAT)]]
 ### Leitos:
 - Cadastrar [[Leito]]
 - Consultar situação do [[Leito]]
 - Bloquear [[Leito]]
-- Liberar [[Leito]] após [[Alta]]
-- Vincular [[Leito]] a [[Internação]]
+- Liberar [[Leito]] após [[Alta (ALTA.DAT)]]
+- Vincular [[Leito]] a [[Internação (INTER.DAT)]]
 - Vincular [[Leito]] a [[Quarto]]
 ### Quartos:
 - Cadastrar [[Quarto]]
-- Vincular [[Quarto]] a [[Setor]]
+- Vincular [[Quarto]] a [[Setor (SET.DAT)]]
 ### Setores:
-- Cadastrar [[Setor]]
-- Consultar [[Setor]]
+- Cadastrar [[Setor (SET.DAT)]]
+- Consultar [[Setor (SET.DAT)]]
 ### Horários de Atendimento
 - Cadastrar [[Horário de Atendimento]]
-- Vincular [[Horário de Atendimento]] a [[Médico]]
+- Vincular [[Horário de Atendimento]] a [[Médico (MED.DAT)]]
 ### Atendimento
 - Cadastrar [[Atendimento]]
 - Consultar [[Atendimento]]
 ### Convênios:
 - Cadastrar [[Convênio]]
 - Consultar [[Convênio]]
-- Vincular [[Convênio]] a [[Internação]]
+- Vincular [[Convênio]] a [[Internação (INTER.DAT)]]
 - Vincular [[Convênio]] a [[Atendimento]]
 - Vincular [[Convênio]] a [[Convênio do Paciente]]
 ### Responsável
@@ -78,7 +78,7 @@ O sistema deve:
 - Cadastrar [[Responsável do Paciente]]
 - Consultar [[Responsável do Paciente]]
 - Alterar [[Responsável do Paciente]]
-- Vincular [[Responsável do Paciente]] a [[Paciente]]
+- Vincular [[Responsável do Paciente]] a [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]]
 ### Movimentação entre Leitos:
 - Registrar [[Movimentação de Leito]]
 - Consultar [[Movimentação de Leito]]
@@ -86,15 +86,15 @@ O sistema deve:
 - Cadastrar [[Convênio do Paciente]]
 - Alterar [[Convênio do Paciente]]
 - Consultar [[Convênio do Paciente]]
-- Vincular [[Convênio do Paciente]] a [[Paciente]]
+- Vincular [[Convênio do Paciente]] a [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]]
 ### Especialidades do Médico:
 - Cadastrar [[Especialidade do Médico]]
 - Alterar [[Especialidade do Médico]]
 - Consultar [[Especialidade do Médico]]
-- Vincular [[Especialidade do Médico]] a [[Médico]]
+- Vincular [[Especialidade do Médico]] a [[Médico (MED.DAT)]]
 ### Convênios da Internação:
 - Cadastrar [[Convênio da Internação]]
-- Vincular [[Convênio da Internação]] a [[Internação]]
+- Vincular [[Convênio da Internação]] a [[Internação (INTER.DAT)]]
 
 ---
 
@@ -120,14 +120,14 @@ O sistema deve:
 ---
 
 ## Entidades:
-- [[Paciente]]
-- [[Médico]]
-- [[Especialidade]]
-- [[Diagnóstico]]
+- [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]]
+- [[Médico (MED.DAT)]]
+- [[Especialidade (CLI.DAT)]]
+- [[Diagnóstico (DIAG.DAT)]]
 - [[Leito]]
-- [[Setor]]
-- [[Alta]]
-- [[Internação]]
+- [[Setor (SET.DAT)]]
+- [[Alta (ALTA.DAT)]]
+- [[Internação (INTER.DAT)]]
 - [[Horário de Atendimento]]
 - [[Atendimento]]
 - [[Atendimento de Emergência]]

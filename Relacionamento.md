@@ -566,6 +566,8 @@ PACIENTE {
   string cidade
 
   string estado
+  
+  string profissao
 
 }
 
