@@ -13,7 +13,7 @@
 ```mermaid
 erDiagram
 PACIENTE {
-	int registro PK "PACIT.DAT | registro"
+	int codigo PK "PACIT.DAT | registro"
 	string nome "PACIT.DAT | nome"
 	string endereco "PACIT.DAT | endereco"
 	string cidade "PACIT.DAT | cidade"
