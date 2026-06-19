@@ -13,12 +13,11 @@
 ```mermaid
 erDiagram
 PACIENTE {
-	int registro PK "PACIT.DAT"
-	string nome "PACIT.DAT"
-	string endereco "PACIT.DAT"
-	date nascimento "PACIT.DAT"
-	string sexo
+	int registro PK "PACIT.DAT | registro"
+	string nome "PACIT.DAT | nome"
+	string endereco "PACIT.DAT | endereco"
+	string cidade "PACIT.DAT | cidade"
+	string estado "PACIT.DAT | uf"
 	
-	string codigo_cidade FK "CIDADES.DAT"
 }
 ```

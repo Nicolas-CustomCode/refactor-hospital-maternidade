@@ -38,10 +38,10 @@
 ## Requisitos:
 O sistema deve:
 ### Contas:
-- Cadastrar [[Fatura]]
-- Consultar [[Fatura]]
-- Alterar informações de [[Fatura]] abertas
-- Vincular [[Fatura]] a [[Internação (INTER.DAT)]]
+- Cadastrar [[Fatura (FATURAS.DAT)]]
+- Consultar [[Fatura (FATURAS.DAT)]]
+- Alterar informações de [[Fatura (FATURAS.DAT)]] abertas
+- Vincular [[Fatura (FATURAS.DAT)]] a [[Internação (INTER.DAT)]]
 ### Exames:
 - Cadastrar [[Exame (EXAME.DAT)]]
 - Consultar [[Exame (EXAME.DAT)]]
@@ -51,12 +51,12 @@ O sistema deve:
 - Cadastrar [[Item da Conta]]
 - Consultar [[Item da Conta]]
 - Alterar [[Item da Conta]]
-- Vincular [[Item da Conta]] a [[Fatura]]
+- Vincular [[Item da Conta]] a [[Fatura (FATURAS.DAT)]]
 
 ---
 
 ## Entidades:
 - [[Exame (EXAME.DAT)]]
 - [[Exame por Convênio]]
-- [[Fatura]]
+- [[Fatura (FATURAS.DAT)]]
 - [[Item da Conta]]

@@ -8,6 +8,7 @@
 ## Entidade:
 ```mermaid
 erDiagram
+
 MEDICO {
 	int codigo PK "MED.DAT | codigo"
 	string nome "MED.DAT | nome"

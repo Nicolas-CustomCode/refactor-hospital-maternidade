@@ -9,7 +9,7 @@
 erDiagram
 
 GRUPO {
-	int codigo PK
-	string nome
+	int codigo PK "GRUP.DAT | codigo"
+	string nome "GRUP.DAT | nome"
 }
 ```

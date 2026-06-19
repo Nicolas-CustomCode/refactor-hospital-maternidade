@@ -1,7 +1,7 @@
 #entidade
 ## Arquivos:
-- GRUP.DAT
-- SUBGRUP.DAT [[Subgrupo (SUBGRUP.DAT)]]
+- SUBGRUP.DAT
+- GRUP.DAT ([[Grupo (GRUP.DAT)]])
 
 ---
 
@@ -9,8 +9,13 @@
 ```mermaid
 erDiagram
 SUBGRUPO {
-	int codigo PK
-	int codigo_grupo FK "SUBGRUP.DAT | codigo"
-	string nome
+	int codigo_grupo FK "GRUP.DAT | codigo"
+	int codigo PK "SUBGRUP.DAT | campo1"
+	string nome "SUBGRUP.DAT | campo2"
 }
 ```
+
+---
+
+## Obs:
+- 2 primeiros dígitos de `campo1` se referem ao código do grupo e os 2 últimos se referem ao código do subgrupo

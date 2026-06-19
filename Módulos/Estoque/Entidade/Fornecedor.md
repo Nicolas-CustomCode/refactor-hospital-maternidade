@@ -1,15 +1,11 @@
-#entidade 
+#entidade
 ## Entidade:
 ```mermaid
 erDiagram
 FORNECEDOR {
-	int codigo PK
-	string nome
-	string endereco
-	string cidade
-	string estado
-	string cep
-	string telefone
-	string observacao
+	int codigo PK "FORN.DAT | codigo"
+	string nome "FORN.DAT | nome"
+	string endereco "FORN.DAT | endereco"
+	string cidade "FORN.DAT | cidade"
 }
 ```
