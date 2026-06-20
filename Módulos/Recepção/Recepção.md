@@ -14,15 +14,11 @@ O sistema deve:
 - Consultar dados do [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]] cadastrado
 - Alterar dados cadastrais de [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]]
 - Vincular [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]] a [[Internação (INTER.DAT)]]
-- Vincular [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]] a [[Atendimento]]
-- Vincular [[Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)]] a [[Atendimento]]
 ### Médicos:
 - Cadastrar [[Médico (MED.DAT)]]
 - Consultar dados do [[Médico (MED.DAT)]] cadastrado
 - Alterar dados cadastrais de [[Médico (MED.DAT)]]
 - Vincular [[Médico (MED.DAT)]] a [[Internação (INTER.DAT)]]
-- Vincular [[Médico (MED.DAT)]] a [[Atendimento]]
-- Vincular [[Médico (MED.DAT)]] a [[Atendimento]]
 ### Especialidades:
 - Cadastrar [[Especialidade (CLI.DAT)]]
 - Vincular [[Especialidade (CLI.DAT)]] a [[Especialidade do Médico]]
@@ -31,7 +27,7 @@ O sistema deve:
 ### Internações:
 - Cadastrar [[Internação (INTER.DAT)]]
 - Consultar [[Internação (INTER.DAT)]]
-- Transferir [[Internação (INTER.DAT)]] entre [[Leito]]
+- Transferir [[Internação (INTER.DAT)]] entre [[Consumidor (CONSU.DAT)]]
 ### Altas:
 - Cadastrar [[Alta (ALTA.DAT)]]
 - Consultar [[Alta (ALTA.DAT)]]
@@ -124,22 +120,9 @@ O sistema deve:
 - [[Médico (MED.DAT)]]
 - [[Especialidade (CLI.DAT)]]
 - [[Diagnóstico (DIAG.DAT)]]
-- [[Leito]]
 - [[Setor (SET.DAT)]]
 - [[Alta (ALTA.DAT)]]
 - [[Internação (INTER.DAT)]]
-- [[Horário de Atendimento]]
-- [[Atendimento]]
-- [[Atendimento de Emergência]]
-- [[Convênio]]
-- [[Tabela CID10]]
-- [[Quarto]]
-- [[Movimentação de Leito]]
-- [[Responsável]]
-- [[Convênio do Paciente]]
-- [[Especialidade do Médico]]
-- [[Convênio da Internação]]
-- [[Diagnóstico da Internação]]
 
 ---
 

@@ -1,638 +1,243 @@
+# Relacionamento de Entidades do Sistema Legado
+
+Este diagrama consolida as entidades mapeadas a partir dos arquivos `.DAT` das pastas de módulos (Estoque, Financeiro e Recepção), incluindo as colunas de origem de cada campo.
+
 ```mermaid
 erDiagram
-
-  
-
-ATENDIMENTO ||..o| INTERNACAO : gera
-
-  
-
-PACIENTE ||..o{ ATENDIMENTO : realiza
-
-PACIENTE ||--o{ INTERNACAO : possui
-
-PACIENTE ||--o{ PACIENTE_CONVENIO : possui
-
-PACIENTE ||--o{ PACIENTE_RESPONSAVEL : possui
-
-  
-
-RESPONSAVEL ||--o{ PACIENTE_RESPONSAVEL : possui
-
-RESPONSAVEL ||--o{ INTERNACAO : possui
-
-  
-
-MEDICO ||..o{ ATENDIMENTO : realiza
-
-MEDICO ||--o{ INTERNACAO : possui
-
-MEDICO ||--|{ MEDICO_ESPECIALIDADE : possui
-
-MEDICO ||--o{ HORARIO_ATENDIMENTO : possui
-
-  
-
-ESPECIALIDADE ||--o{ MEDICO_ESPECIALIDADE : possui
-
-  
-
-SETOR ||--o{ QUARTO : possui
-
-  
-
-QUARTO ||--o{ LEITO : possui
-
-  
-
-LEITO ||--o{ LEITO_MOVIMENTACAO : possui
-
-LEITO ||--o{ INTERNACAO : possui
-
-  
-
-INTERNACAO ||--o| ALTA : possui
-
-INTERNACAO ||--|| CONTA : possui
-
-INTERNACAO ||--o{ INTERNACAO_CONVENIO : possui
-
-INTERNACAO ||--o{ INTERNACAO_DIAGNOSTICO : possui
-
-INTERNACAO ||--o{ LEITO_MOVIMENTACAO : possui
-
-  
-
-CONVENIO ||--o{ PACIENTE_CONVENIO : possui
-
-CONVENIO ||--o{ INTERNACAO_CONVENIO : possui
-
-CONVENIO ||--o{ TAXA_CONVENIO : possui
-
-CONVENIO ||--o{ EXAME_CONVENIO : possui
-
-CONVENIO ||--o{ MATERIAL_CONVENIO : possui
-
-CONVENIO ||--o{ MEDICAMENTO_CONVENIO : possui
-
-CONVENIO ||--o{ DIARIA_CONVENIO : possui
-
-  
-
-MATERIAL ||--o{ MATERIAL_CONVENIO : possui
-
-  
-
-DIARIA ||--o{ DIARIA_CONVENIO : possui
-
-  
-
-MEDICAMENTO ||--o{ MEDICAMENTO_CONVENIO : possui
-
-  
-
-DIAGNOSTICO ||--o{ INTERNACAO_DIAGNOSTICO : possui
-
-  
-
-EXAME ||--o{ EXAME_CONVENIO : possui
-
-  
-
-CATEGORIA_EXAME ||--o{ EXAME : possui
-
-  
-
-TAXA ||--o{ TAXA_CONVENIO : possui
-
-  
-
-CONTA ||--o{ ITEM_CONTA : possui
-
-  
-
-INTERNACAO_CONVENIO ||--o{ ITEM_CONTA : referencia
-
-  
-
-EXAME_CONVENIO ||--o{ ITEM_CONTA : referencia
-
-  
-
-DIARIA_CONVENIO ||--o{ ITEM_CONTA : referencia
-
-  
-
-MATERIAL_CONVENIO ||--o{ ITEM_CONTA : referencia
-
-  
-
-MEDICAMENTO_CONVENIO ||--o{ ITEM_CONTA : referencia
-
-  
-
-TAXA_CONVENIO ||--o{ ITEM_CONTA : referencia
-
-  
-
-TAXA_CONVENIO {
-
-  uuid id PK
-
-  uuid taxa_id FK
-
-  uuid convenio_id FK
-
-  decimal valor
-
-}
-
-  
-
-TAXA {
-
-  uuid id PK
-
-  string codigo
-
-  string descricao
-
-}
-
-  
-
-MEDICAMENTO_CONVENIO {
-
-  uuid id PK
-
-  uuid medicamento_id FK
-
-  uuid convenio_id FK
-
-  decimal valor
-
-}
-
-  
-
-MEDICAMENTO {
-
-  uuid id PK
-
-  string codigo
-
-  string nome
-
-}
-
-  
-
-MATERIAL_CONVENIO {
-
-  uuid id PK
-
-  uuid material_id FK
-
-  uuid convenio_id FK
-
-  decimal valor
-
-}
-
-  
-
-MATERIAL {
-
-  uuid id PK
-
-  string nome
-
-  string descricao
-
-}
-
-  
-
-ITEM_CONTA {
-
-  uuid id PK
-
-  uuid conta_id FK
-
-  uuid exame_convenio_id FK
-
-  uuid diaria_convenio_id FK
-
-  uuid medicamento_convenio_id FK
-
-  uuid material_convenio_id FK
-
-  uuid taxa_convenio_id FK
-
-  decimal quantidade
-
-  decimal valor_unitario
-
-  decimal valor_total
-
-}
-
-  
-
-EXAME_CONVENIO {
-
-  uuid id PK
-
-  uuid exame_id FK
-
-  uuid convenio_id FK
-
-  decimal valor
-
-}
-
-  
-
-EXAME {
-
-  uuid id PK
-
-  uuid categoria_id FK
-
-  string codigo_tuss
-
-  string nome
-
-  string descricao
-
-  boolean ativo
-
-  datetime created_at
-
-  datetime updated_at
-
-}
-
-  
-
-DIARIA_CONVENIO {
-
-  uuid id PK
-
-  uuid diaria_id FK
-
-  uuid convenio_id FK
-
-  decimal valor
-
-}
-
-  
-
-DIARIA {
-
-  uuid id PK
-
-  string codigo
-
-  string descricao
-
-}
-
-  
-
-CONTA {
-
-  uuid id PK
-
-  uuid internacao_id FK
-
-  decimal total
-
-}
-
-  
-
-CATEGORIA_EXAME {
-
-  uuid id PK
-
-  string codigo
-
-  string descrifcao
-
-}
-
-  
-
-ALTA {
-
-  uuid id PK
-
-  uuid internacao_id FK
-
-  string codigo
-
-  datetime data_saida
-
-}
-
-  
-
-ATENDIMENTO {
-
-  uuid id PK
-
-  uuid paciente_id FK
-
-  uuid medico_id FK
-
-  enum tipo
-
-  date hora_entrada
-
-  date hora_saida
-
-}
-
-  
-
-CONVENIO {
-
-  uuid id PK
-
-  string nome
-
-}
-
-  
-
-INTERNACAO_CONVENIO {
-
-  uuid id PK
-
-  uuid internacao_id FK
-
-  uuid convenio_id FK
-
-}
-
-  
-
-PACIENTE_CONVENIO {
-
-  uuid id PK
-
-  uuid paciente_id FK
-
-  uuid convenio_id FK
-
-  string carteirinha
-
-}
-
-  
-
-DIAGNOSTICO {
-
-  uuid id PK
-
-  string codigo
-
-  string codigo_cid
-
-  string nome
-
-}
-
-  
-
-INTERNACAO_DIAGNOSTICO {
-
-  uuid id PK
-
-  uuid internacao_id FK
-
-  uuid diagnostico_id FK
-
-}
-
-  
-
-ESPECIALIDADE {
-
-  uuid id PK
-
-  string codigo
-
-  string nome
-
-}
-
-  
-
-MEDICO_ESPECIALIDADE {
-
-  uuid id PK
-
-  uuid medico_id FK
-
-  uuid especialidade_id FK
-
-}
-
-  
-
-HORARIO_ATENDIMENTO {
-
-  uuid id PK
-
-  uuid medico_id FK
-
-  date hora_entrada
-
-  date hora_saida
-
-}
-
-  
-
-INTERNACAO {
-
-  uuid id PK
-
-  uuid atendimento_id FK
-
-  uuid paciente_id FK
-
-  uuid responsavel_id FK
-
-  uuid medico_id FK
-
-  uuid leito_atual_id FK
-
-  string codigo UK
-
-  datetime data_entrada
-
-  datetime data_encerramento
-
-}
-
-  
-
-LEITO {
-
-  uuid id PK
-
-  uuid quarto_id FK
-
-  string codigo UK
-
-  string nome
-
-}
-
-  
-
-MEDICO {
-
-  uuid id PK
-
-  string nome
-
-  string telefone
-
-  string cep
-
-  string estado
-
-  string cidade
-
-  string bairro
-
-  string rua
-
-  string numero
-
-}
-
-  
-
-LEITO_MOVIMENTACAO {
-
-  uuid id PK
-
-  uuid internacao_id FK
-
-  uuid leito_id FK
-
-  uuid novo_leito_id FK
-
-  string codigo
-
-}
-
-  
-
-PACIENTE {
-
-  uuid id PK
-
-  string nome
-
-  date data_nascimento
-
-  string sexo
-
-  string nome_mae
-
-  string cpf
-
-  string telefone
-
-  string cartao_sus
-
-  string cep
-
-  string logradouro
-
-  string numero
-
-  string complemento
-
-  string bairro
-
-  string cidade
-
-  string estado
-  
-  string profissao
-
-}
-
-  
-
-QUARTO {
-
-  uuid id PK
-
-  uuid setor_id FK
-
-  string codigo
-
-  string nome
-
-}
-
-  
-  
-
-RESPONSAVEL {
-
-  uuid id PK
-
-  string nome
-
-  string cpf
-
-  string telefone
-
-  string cep
-
-  string estado
-
-  string cidade
-
-  string bairro
-
-  string rua
-
-  string numero
-
-}
-
-  
-
-PACIENTE_RESPONSAVEL {
-
-  uuid id PK
-
-  uuid paciente_id FK
-
-  uuid responsavel_id FK
-
-  string relacao
-
-}
-
-  
-
-SETOR {
-
-  uuid id PK
-
-  string codigo
-
-}
+    %% =======================
+    %% MÓDULO ESTOQUE
+    %% =======================
+    CONSUMIDOR {
+        int codigo PK
+        string nome
+        int tipo
+        int sus
+        int setor FK "SET.DAT | codigo"
+        int paciente FK "PACIT.DAT | registro"
+    }
+    FORNECEDOR {
+        int codigo PK "FORN.DAT | codigo"
+        string nome "FORN.DAT | nome"
+        string endereco "FORN.DAT | endereco"
+        string cidade "FORN.DAT | cidade"
+        string estado "FORN.DAT | uf"
+        string cep "FORN.DAT | cep"
+        string telefone "FORN.DAT | fone"
+        string observacao "FORN.DAT | obs"
+    }
+    GRUPO {
+        int codigo PK "GRUP.DAT | codigo"
+        string nome "GRUP.DAT | nome"
+    }
+    PRODUTO {
+        int codigo PK "PROD.DAT | codigo"
+        string nome "PROD.DAT | nome"
+        string unidade "PROD.DAT | unidade"
+        string observacao "PROD.DAT | observacao"
+        int padrao "PROD.DAT | padrao"
+        int minimo "PROD.DAT | minimo"
+        int maximo "PROD.DAT | maximo"
+        decimal quantidade "PROD.DAT | quantidade"
+        int custo_medio "PROD.DAT | medio"
+        int grupo FK "GRUP.DAT | codigo"
+        int subgrupo FK "SUBGRUP.DAT | codigo"
+        int controlado "PROD.DAT | controlado"
+        int tabela_compras "PROD.DAT | tipo_compra"
+        int ultimo_fornecedor FK "FORN.DAT | codigo"
+        date ultima_compra "PROD.DAT | ultdata"
+        decimal custo_medio "--CAMPO NÃO ENCONTRADO--"
+        decimal proeps "PROD.DAT | unitario"
+        decilam brasindice "PROD.DAT | pbrasindice"
+        decimal reposicao "--CAMPO NÃO ENCONTRADO--"
+    }
+    SUBGRUPO {
+        int codigo_grupo FK "GRUP.DAT | codigo"
+        int codigo PK "SUBGRUP.DAT | campo1"
+        string nome "SUBGRUP.DAT | campo2"
+    }
+
+    %% =======================
+    %% MÓDULO FINANCEIRO
+    %% =======================
+    TAXA_DIARIA {
+        int codigo PK "TXDIARIA.DAT | campo1"
+        string descricao "TXDIARIA.DAT | campo2"
+        int tipo "TXDIARIA.DAT | tipo"
+        decimal valor_sanepar "TXDIARIA.DAT | valor1"
+        decimal valor_copel "TXDIARIA.DAT | valor2"
+        decimal valor_ipe "TXDIARIA.DAT | valor3"
+        decimal valor_unimed "TXDIARIA.DAT | valor4"
+        decimal valor_bradesco "TXDIARIA.DAT | valor5"
+        decimal em_branco "TXDIARIA.DAT | valor6"
+        decimal valor_furnas "TXDIARIA.DAT | valor7"
+        decimal valor_coamo "TXDIARIA.DAT | valor8"
+        decimal valor_pam "TXDIARIA.DAT | valor9"
+        decimal valor_sas "TXDIARIA.DAT | valor10"
+    }
+    EXAME {
+        int codigo PK
+        int codigo_amb
+        string nome
+        int tipo_exame
+        int ch_90
+        int ch_92
+        int ch_96
+        decimal filme
+        decimal valor_sus
+        decimal particular
+        decimal convenio
+    }
+    FATURA {
+        int codigo PK
+        int data_entrada
+        int data_saida
+    }
+    VALOR_CH {
+        int mes_ano PK
+        decimal valor_moeda
+        decimal valor_ch0
+        decimal valor_ch1
+        decimal valor_ch2
+        decimal valor_ch3
+        decimal valor_ch4
+        decimal valor_ch5
+        decimal valor_ch6
+        decimal valor_ch7
+        decimal valor_ch8
+        decimal valor_ch9
+        decimal valor_sadt
+        decimal valor_livre
+        int dia1
+        int dia2
+        int dia3
+        int dia4
+        int dia5
+        string descricao_dia1
+        string descricao_dia2
+        string descricao_dia3
+        string descricao_dia4
+        string descricao_dia5
+    }
+
+    %% =======================
+    %% MÓDULO RECEPÇÃO
+    %% =======================
+    ALTA {
+        int codigo PK "PACIT.DAT | codigo"
+        int paciente FK "PACIT.DAT | codigo"
+        date data_entrada "PACIT.DAT | dentrada"
+        date data_alta "PACIT.DAT | dalta"
+        int tipo_alta "PACIT.DAT | talta"
+        int hora
+        int setor FK "SET.DAT | codigo"
+        int quarto FK "CONSU.DAT | codigo"
+        int encaminhamento
+        int classificacao FK "CLAS.DAT | codigo"
+        int diagnostico FK "DIAG.DAT | codigo"
+    }
+    CIDADE {
+        int codigo PK
+        string cidade
+        string uf
+        string cep
+        string ibge
+    }
+    CLASSIFICACAO {
+        int codigo PK "CLAS.DAT | codigo"
+        string nome "CLAS.DAT | nome"
+        string endereco "CLAS.DAT | nome"
+        string cidade "CLAS.DAT | cidade"
+        string estado "CLAS.DAT | uf"
+        int tabela_taxas_diarias "CLAS.DAT | cod2"
+        int tipo_atendimento "CLAS.DAT | tipo"
+        int tabela_ch "CLAS.DAT | cod1"
+        int ch_exames "CLAS.DAT | tipo"
+        int raio_x "CLAS.DAT | tipo"
+    }
+    DIAGNOSTICO {
+        int codigo PK "DIAG.DAT | codigo"
+        string nome ""
+        int cid "DIAG.DAT | num2"
+        int ssm "DIAG.DAT | codSus"
+        int amb "DIAG.DAT | num1"
+        int qtd_ch "DIAG.DAT | num3"
+        int porte "DIAG.DAT | num3"
+        int auxiliares "DIAG.DAT | num3"
+    }
+    ESPECIALIDADE {
+        int codigo PK "CLI.DAT | codigo"
+        string nome "CLI.DAT | nome"
+    }
+    INTERNACAO {
+        int codigo PK "INTER.DAT | codigo"
+        int paciente FK "PACIT.DAT | registro"
+        string responsavel FK "PACIT.DAT | responsavel"
+        int data_entrada "INTER.DAT | dentrada"
+        int horas "INTER.DAT | horas"
+        int encaminhamento "INTER.DAT | encaminhamento"
+        int classificacao FK "CLAS.DAT | codigo"
+        int diagnostico FK "DIAG.DAT | codigo"
+        int clinica FK "CLI.DAT | codigo"
+        int medico FK "MED.DAT | codigo"
+        int leito FK "CONSU.DAT | codigo"
+        int tem_guia "CONSU.DAT | temguia"
+    }
+    MEDICO {
+        int codigo PK "MED.DAT | codigo"
+        string nome "MED.DAT | nome"
+        string endereco "MED.DAT | endereco"
+        string cidade "MED.DAT | cidade"
+        string estado "MED.DAT | uf"
+        int cep "MED.DAT | cep"
+        string res "--BRUNO FALOU QUE NÃO USA--"
+        string com "MED.DAT | fone"
+        int crm "MED.DAT | doc"
+        int cpf "MED.DAT | doc"
+        int atendimento "MED.DAT | obs"
+        int cns "MED.DAT | numA"
+        int cbo "MED.DAT | numB"
+        int clinicas1 FK "CLI.DAT | codigo"
+        int clinicas2 FK "CLI.DAT | codigo"
+    }
+    PACIENTE {
+        int codigo PK "PACIT.DAT | registro"
+        string nome "PACIT.DAT | nome"
+        string endereco "PACIT.DAT | endereco"
+        string cidade "PACIT.DAT | cidade"
+        string estado "PACIT.DAT | uf"
+    }
+    SETOR {
+        int codigo PK "SET.DAT | codigo"
+        string nome "SET.DAT | nome"
+        int enfermarias ""
+        int apartamentos
+    }
+
+    %% =======================
+    %% RELACIONAMENTOS (FKs)
+    %% =======================
+    CONSUMIDOR }|--|| SETOR : pertence_ao
+    CONSUMIDOR }o--|| PACIENTE : pertence_ao
+    
+    PRODUTO }|--|| GRUPO : pertence_ao
+    PRODUTO }o--|| SUBGRUPO : pertence_ao
+    PRODUTO }o--|| FORNECEDOR : ultimo_fornecedor
+    SUBGRUPO }|--|| GRUPO : pertence_ao
+    
+    ALTA }o--|| PACIENTE : referente_ao
+    ALTA }o--|| SETOR : ocorreu_no
+    ALTA }o--|| CONSUMIDOR : quarto
+    ALTA }o--|| CLASSIFICACAO : classificado_como
+    ALTA }o--|| DIAGNOSTICO : diagnosticado_como
+    
+    INTERNACAO }o--|| PACIENTE : referente_ao
+    INTERNACAO }o--|| PACIENTE : responsavel
+    INTERNACAO }o--|| CLASSIFICACAO : classificado_como
+    INTERNACAO }o--|| DIAGNOSTICO : diagnosticado_como
+    INTERNACAO }o--|| ESPECIALIDADE : clinica
+    INTERNACAO }o--|| MEDICO : atendido_por
+    INTERNACAO }o--|| CONSUMIDOR : leito
+    
+    MEDICO }o--|| ESPECIALIDADE : possui_especialidade_1
+    MEDICO }o--|| ESPECIALIDADE : possui_especialidade_2
 ```

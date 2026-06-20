@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Módulos/Financeiro/Entidades/Exame (EXAME.DAT).md",
+                "file": "Módulos/Recepção/Entidades/Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT).md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Exame (EXAME.DAT)"
+              "title": "Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT)"
             }
           }
         ]
@@ -183,18 +183,31 @@
   },
   "active": "0798fc53b7f72222",
   "lastOpenFiles": [
-    "Módulos/Financeiro/Entidades/Fatura (FATURAS.DAT).md",
-    "Módulos/Financeiro/Entidades/Diárias e Taxas (TXDIARIA.DAT).md",
-    "Módulos/Financeiro/Entidades/Exame (EXAME.DAT).md",
-    "Módulos/Recepção/Entidades/Internação (INTER.DAT).md",
-    "Módulos/Recepção/Entidades/Médico (MED.DAT).md",
-    "Módulos/Recepção/Entidades/Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT).md",
     "Módulos/Recepção/Entidades/Setor (SET.DAT).md",
     "Módulos/Recepção/Entidades/Especialidade (CLI.DAT).md",
-    "Módulos/Recepção/Entidades/Alta (ALTA.DAT).md",
-    "Módulos/Recepção/Entidades/Cidade (CIDADES.DAT).md",
-    "Módulos/Financeiro/Entidades/Valor CH (VAL.DAT).md",
+    "Módulos/Recepção/Entidades/Paciente (PACIT.DAT, PACIT2.DAT, PACIT3.DAT).md",
+    "Módulos/Recepção/Entidades/Médico (MED.DAT).md",
+    "Relacionamento.md",
+    "Módulos/Recepção/Entidades/Internação (INTER.DAT).md",
     "Módulos/Estoque/Entidade/Produto (PROD.DAT).md",
+    "Módulos/Recepção/Entidades/Diagnóstico (DIAG.DAT).md",
+    "Módulos/Recepção/Entidades/Classificação (CLAS.DAT).md",
+    "Módulos/Estoque/Entidade/Consumidor (CONSU.DAT).md",
+    "Módulos/Estoque/Entidade/Fornecedor (FORN.DAT).md",
+    "Módulos/Estoque/Entidade/Grupo (GRUP.DAT).md",
+    "Módulos/Estoque/Entidade/Laboratório (não utilizado).md",
+    "Módulos/Estoque/Entidade/Subgrupo (SUBGRUP.DAT).md",
+    "Módulos/Financeiro/Entidades/Diárias e Taxas (TXDIARIA.DAT).md",
+    "Módulos/Recepção/Entidades/Alta (ALTA.DAT).md",
+    "Pasted image 20260619162818.png",
+    "Módulos/Recepção/Entidades/Cidade (CIDADES.DAT).md",
+    "Módulos/Recepção/Recepção.md",
+    "Módulos/Financeiro/Financeiro.md",
+    "Módulos/Financeiro/Entidades/Fatura (FATURAS.DAT).md",
+    "Módulos/Módulos.md",
+    "Diagnóstico da Internação.md",
+    "Módulos/Financeiro/Entidades/Exame (EXAME.DAT).md",
+    "Módulos/Financeiro/Entidades/Valor CH (VAL.DAT).md",
     "Arquivos DAT/PACIT.DAT",
     "Arquivos DAT/SET.DAT",
     "Arquivos DAT/INTER.DAT",
@@ -205,19 +218,7 @@
     "Arquivos DAT/CLAS.DAT",
     "Arquivos DAT/SUBGRUP.DAT",
     "Arquivos DAT/PROD.DAT",
-    "Módulos/Recepção/Entidades/Classificação (CLAS.DAT).md",
-    "Módulos/Estoque/Entidade/Consumidor (CONSU.DAT).md",
-    "Módulos/Estoque/Entidade/Fornecedor (FORN.DAT).md",
-    "Módulos/Estoque/Entidade/Grupo (GRUP.DAT).md",
-    "Módulos/Estoque/Entidade/Laboratório (não utilizado).md",
-    "Módulos/Estoque/Entidade/Subgrupo (SUBGRUP.DAT).md",
     "Módulos/Estoque/Entidade/Tipo de Produto (não utilizado).md",
-    "Módulos/Estoque/Estoque.md",
-    "Módulos/Recepção/Entidades/Diagnóstico (DIAG.DAT).md",
-    "Módulos/Recepção/Recepção.md",
-    "Módulos/Recepção/Entidades/Leito.md",
-    "Módulos/Recepção/Entidades/Convênio.md",
-    "Módulos/Financeiro/Entidades/Medicamento.md",
     "Pasted image 20260616110936.png"
   ]
 }

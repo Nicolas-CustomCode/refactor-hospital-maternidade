@@ -6,6 +6,7 @@
 - CONSU.DAT ([[Consumidor (CONSU.DAT)]])
 - CLAS.DAT ([[Classificação (CLAS.DAT)]])
 - SET.DAT ([[Setor (SET.DAT)]])
+- DIAG.DAT ([[Diagnóstico (DIAG.DAT)]])
 
 ---
 
@@ -23,7 +24,7 @@ ALTA {
 	int quarto FK "CONSU.DAT | codigo"
 	int encaminhamento
 	int classificacao FK "CLAS.DAT | codigo"
-	int diagnostico FK ""
+	int diagnostico FK "DIAG.DAT | codigo"
 }
 ```
  

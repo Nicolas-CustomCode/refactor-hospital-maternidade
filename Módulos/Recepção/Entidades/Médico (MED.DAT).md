@@ -16,7 +16,7 @@ MEDICO {
 	string cidade "MED.DAT | cidade"
 	string estado "MED.DAT | uf"
 	int cep "MED.DAT | cep"
-	string res
+	string res "--BRUNO FALOU QUE NÃO USA--"
 	string com "MED.DAT | fone"
 	int crm "MED.DAT | doc"
 	int cpf "MED.DAT | doc"

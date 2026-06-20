@@ -14,9 +14,7 @@ CONSUMIDOR {
 	string nome
 	int tipo
 	int sus
-	
 	int setor FK "SET.DAT | codigo"
-	
 	int paciente FK "PACIT.DAT | registro"
 }
 ```
